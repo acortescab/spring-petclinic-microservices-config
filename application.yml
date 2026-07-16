@@ -97,9 +97,9 @@ spring:
     activate:
       on-profile: mysql
   datasource:
-    url: jdbc:mysql://${MYSQL_HOST:localhost}:${MYSQL_PORT:3306}/petclinic?allowPublicKeyRetrieval=true&useSSL=false
-    username: ${MYSQL_USER:root}
-    password: ${MYSQL_PASS:petclinic}
+    url: jdbc:mysql://mysql-server:3306/petclinic?allowPublicKeyRetrieval=true&useSSL=false
+    username: root
+    password: ${MYSQL_PASSWORD}
   sql:
     init:
       schema-locations: classpath*:db/mysql/schema.sql
