@@ -48,14 +48,13 @@ management:
       enabled: true
     prometheus:
       enabled: true
+    health:
+      probes:
+        enabled: true
   endpoints:
     web:
       exposure:
         include: '*'
-  endpoint:
-    health:
-      probes:
-        enabled: true
   metrics:
     export:
       prometheus:
